@@ -1,0 +1,21 @@
+{
+	"ignorePaths": [
+		".git",
+		".vscode",
+		".vscode-insiders",
+		"**/*.apk",
+		"android",
+		"build",
+		"dist",
+		"ios",
+		"node_modules",
+		"package-lock.json",
+		"pnpm-lock.yaml",
+		"public",
+		"trace",
+		"tsconfig.vitest-temp.json",
+		"vscode-extension",
+		"yarn.lock"
+	],
+	"words": ["nfcserialreader", "RFID", "rssi", "UHF"]
+}
