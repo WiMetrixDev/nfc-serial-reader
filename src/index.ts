@@ -29,7 +29,7 @@ const emitter = new EventEmitter(
 
 export type NFCReadEventPayload = {
 	cardType: "TAG" | "WORKER" | "UNKNOWN";
-	cardId: number;
+	cardId: string;
 };
 
 export function addNFCReadListener(

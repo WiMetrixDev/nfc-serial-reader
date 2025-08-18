@@ -140,14 +140,14 @@ class NFCReaderService(
             // If card type is 0, which
             val finalCardId =
                 if (cardType == 0) {
-                    hexData.substring(0, 8).toInt()
+                    hexData.substring(0, 8) // string
                 } else {
-                    cardId
+                    cardId.toString() // convert int to string
                 }
 
             Log.i(
                 TAG,
-                "Read card of type $cardType translated to $cardTypeString with ID $cardId",
+                "Read card of type $cardType translated to $cardTypeString with raw ID $cardId, final ID $finalCardId"
             )
 
             // Send the event to the JS side with the card ID and card type
