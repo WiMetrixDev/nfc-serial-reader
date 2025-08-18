@@ -37,6 +37,11 @@ android {
 		versionCode 1
 		versionName "0.0.1"
 	}
+	sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
 	lintOptions {
 		abortOnError false
 	}

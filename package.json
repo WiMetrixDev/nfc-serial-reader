@@ -1,6 +1,6 @@
 {
 	"name": "nfc-serial-reader",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "This module allows reading NFC tags using a serial connection to an RFID reader.",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
@@ -25,7 +25,7 @@
 	"bugs": {
 		"url": "https://github.com/WiMetrixDev/nfc-serial-reader/issues"
 	},
-	"author": "mbm_1607 <muhammadkhan1607@gmail.com> (https://github.com/MBM1607)",
+	"author": "abahmadani <ab.ahmadani990@gmail.com> (https://github.com/AbAhmadani)",
 	"license": "MIT",
 	"homepage": "https://github.com/WiMetrixDev/nfc-serial-reader#readme",
 	"dependencies": {},
