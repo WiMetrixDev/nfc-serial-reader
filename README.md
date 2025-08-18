@@ -7,19 +7,19 @@ This module allows reading NFC tags using a serial connection to an RFID reader.
 To install run:
 
 ```bash
-pnpm add nfc-serial-reader
+pnpm add nfc-box-reader
 ```
 
 or
 
 ```bash
-npm install nfc-serial-reader
+npm install nfc-box-reader
 ```
 
 or
 
 ```bash
-yarn add nfc-serial-reader
+yarn add nfc-box-reader
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ This connects to the NFC reader on the given serial port and specified baud rate
 the background and returns a boolean indicating if the connection was successful.
 
 ```typescript
-import { connectNFCSerialReader } from "nfc-serial-reader";
+import { connectNFCSerialReader } from "nfc-box-reader";
 
 const connected = await connectNFCSerialReader("/dev/ttyS0", 9600);
 ```
@@ -44,7 +44,7 @@ const connected = await connectNFCSerialReader("/dev/ttyS0", 9600);
 This adds a listener to the NFC reader, the listener will be called every time a new tag is read.
 
 ```typescript
-import { addNFCReadListener } from "nfc-serial-reader";
+import { addNFCReadListener } from "nfc-box-reader";
 
 addNFCReadListener((card) => {
 	console.log(`Card Type: ${card.cardType}`);
@@ -67,7 +67,7 @@ This disconnects the NFC reader, stops reading and returns a boolean indicating 
 disconnection was successful.
 
 ```typescript
-import { disconnectNFCSerialReader } from "nfc-serial-reader";
+import { disconnectNFCSerialReader } from "nfc-box-reader";
 
 const disconnected = await disconnectNFCSerialReader();
 ```
@@ -78,7 +78,7 @@ This returns a list of available serial ports on the device (the options that ca
 `connectNFCSerialReader`).
 
 ```typescript
-import { listSerialPorts } from "nfc-serial-reader";
+import { listSerialPorts } from "nfc-box-reader";
 
 const ports = await listSerialPorts();
 ```
@@ -89,7 +89,7 @@ This returns a list of available baud rates that can be passed to `connectNFCSer
 The baud rates are hardcoded to the following values: `[9600, 19200, 38400, 57600, 115200]`.
 
 ```typescript
-import { listBaudRates } from "nfc-serial-reader";
+import { listBaudRates } from "nfc-box-reader";
 
 const baudRates = listBaudRates();
 ```
