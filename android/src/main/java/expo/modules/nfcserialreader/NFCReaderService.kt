@@ -1,7 +1,7 @@
 package expo.modules.nfcserialreader
 
 import android.util.Log
-import com.rfid.reader.Reader
+import com.liang.rfid.Reader;
 import java.io.File
 
 class NFCReaderService(

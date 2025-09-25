@@ -1,6 +1,6 @@
 {
 	"name": "nfc-box-reader",
-	"version": "1.0.2",
+	"version": "1.0.4",
 	"description": "This module allows reading NFC tags using a serial connection to an RFID reader.",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
@@ -27,7 +27,6 @@
 	"author": "abahmadani <ab.ahmadani990@gmail.com> (https://github.com/AbAhmadani)",
 	"license": "MIT",
 	"homepage": "https://github.com/WiMetrixDev/nfc-serial-reader#readme",
-	"dependencies": {},
 	"devDependencies": {
 		"@types/react": "^18.0.25",
 		"expo-module-scripts": "^3.5.2",
